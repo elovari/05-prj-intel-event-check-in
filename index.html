@@ -35,8 +35,8 @@
       </div>
     </div>
     <div class="container">
-      <!-- Feedback message -->
-      <p id="greeting"></p>
+      <!-- Welcome message -->
+      <div id="welcomeMessage"></div>
 
       <!-- Check-in form -->
       <form class="check-in" id="checkInForm">
@@ -63,21 +63,30 @@
         </div>
       </form>
 
-      <!-- Team stats -->
+      <!-- Team stats (keep this for team counts) -->
       <div class="team-stats">
         <h3>Team Attendance</h3>
         <div class="teams-grid">
           <div class="team-card water">
             <span class="team-name">🌊 Team Water Wise</span>
             <span class="team-count" id="waterCount">0</span>
+            <table id="waterTable">
+              <tbody id="waterList"></tbody>
+            </table>
           </div>
           <div class="team-card zero">
             <span class="team-name">🌿 Team Net Zero</span>
             <span class="team-count" id="zeroCount">0</span>
+            <table id="zeroTable">
+              <tbody id="zeroList"></tbody>
+            </table>
           </div>
           <div class="team-card power">
             <span class="team-name">⚡ Team Renewables</span>
             <span class="team-count" id="powerCount">0</span>
+            <table id="powerTable">
+              <tbody id="powerList"></tbody>
+            </table>
           </div>
         </div>
       </div>

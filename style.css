@@ -248,7 +248,7 @@ button .fas {
   font-size: 18px;
   padding: 16px 20px;
   border-radius: 8px;
-  color: #333;
+  color: #333333;
   margin-bottom: 15px;
   display: none;
 }
@@ -348,6 +348,26 @@ select {
   color: #475569;
 }
 
+.team-count {
+  border-bottom: 2px solid #b7e0ff;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.team-card.water .team-count {
+  border-bottom: 2px solid #00c7fd;
+}
+
+.team-card.zero .team-count {
+  border-bottom: 2px solid #22c55e;
+}
+
+.team-card.power .team-count {
+  border-bottom: 2px solid #fbbf24;
+}
+
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
@@ -381,4 +401,18 @@ select {
   .teams-grid {
     grid-template-columns: 1fr;
   }
+}
+
+#welcomeMessage {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #d8ecff;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 20px; /* Add padding for a bigger box */
+  display: none; /* Hide by default */
 }
